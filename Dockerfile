@@ -7,7 +7,7 @@ ENV DISPLAY=:99
 ENV PORT=17003
 ENV DATA_DIR=/app/data
 ENV EXTENSION_PATH=/app/extension
-ENV PUBLIC_VNC_URL=http://localhost:7900
+ENV PUBLIC_VNC_URL=http://localhost:17004
 
 WORKDIR /app
 

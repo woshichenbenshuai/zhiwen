@@ -107,7 +107,7 @@ class BrowserSession {
       proxy: this.proxy,
       extensionPath: this.extensionPath,
       createdAt: this.createdAt,
-      vncUrl: process.env.PUBLIC_VNC_URL || 'http://localhost:7900',
+      vncUrl: process.env.PUBLIC_VNC_URL || 'http://localhost:17004',
     };
   }
 

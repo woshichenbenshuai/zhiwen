@@ -4,7 +4,7 @@ services:
     container_name: zhiwen-browser-control
     environment:
       API_TOKEN: "${API_TOKEN:-change-me}"
-      PUBLIC_VNC_URL: "${PUBLIC_VNC_URL:-http://127.0.0.1:7900}"
+      PUBLIC_VNC_URL: "${PUBLIC_VNC_URL:-http://127.0.0.1:17004}"
       SCREEN_WIDTH: "${SCREEN_WIDTH:-1600}"
       SCREEN_HEIGHT: "${SCREEN_HEIGHT:-900}"
       AUTOSTART_SESSION: "${AUTOSTART_SESSION:-true}"
@@ -12,7 +12,7 @@ services:
       AUTOSTART_PROXY: "${AUTOSTART_PROXY:-}"
     ports:
       - "17003:17003"
-      - "7900:7900"
+      - "17004:7900"
     volumes:
       - ./data:/app/data
       - ./extension:/app/extension

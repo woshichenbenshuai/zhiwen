@@ -23,7 +23,7 @@ docker compose up -d --build
 打开浏览器访问：
 
 ```text
-http://127.0.0.1:7900
+http://127.0.0.1:17004
 ```
 
 这里会看到服务器里弹出的浏览器界面。
@@ -109,7 +109,7 @@ docker compose up -d --build
 
 服务器安全建议：
 
-- 只对你自己的 IP 开放 `17003` 和 `7900`。
+- 只对你自己的 IP 开放 `17003` 和 `17004`。
 - `API_TOKEN` 必须改成强随机字符串。
 - 如果暴露到公网，建议前面加 Nginx HTTPS 和 Basic Auth。
 
