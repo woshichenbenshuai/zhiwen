@@ -1,6 +1,8 @@
 FROM mcr.microsoft.com/playwright:v1.56.1-jammy
 
 ENV NODE_ENV=production
+ENV DEBIAN_FRONTEND=noninteractive
+ENV TZ=Etc/UTC
 ENV DISPLAY=:99
 ENV PORT=17003
 ENV DATA_DIR=/app/data
@@ -11,6 +13,7 @@ WORKDIR /app
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends \
+    tzdata \
     fluxbox \
     x11vnc \
     xvfb \
